@@ -1,0 +1,446 @@
+/*
+
+
+---------------------------------------------------------------ESERCIZIO 1----------------------------------------------------------------------
+
+
+*/
+
+using System;
+namespace EserciziCSharpArray;
+
+class MainClass
+{
+
+    /*
+     * 
+     * Esercizio 1
+     *  Input: 2 stringhe
+     *  Il programma verifica se le due stringhe sono anagrammi, ossia se contengono gli stessi caratteri
+     *  con la stessa frequenza, ma in ordine diverso.
+     *  
+     *  
+     */
+    public static void Main()
+    {
+        //due stringhe in input
+        string str1;
+        string str2;
+        char[] charArray;
+        bool anagram;
+
+        //input stringhe
+        do
+        {
+            Console.Write("Inserisci prima stringa: ");
+            str1 = Console.ReadLine();
+        } while (String.IsNullOrEmpty(str1));
+        
+        do
+        {
+            Console.Write("Inerisci seconda stringa: ");
+            str2 = Console.ReadLine();
+        } while (String.IsNullOrEmpty(str2));
+
+        //entrambe le stringhe devono avere caratteri in maiuscolo e spazi ignorati
+        str1 = str1.ToUpper();
+        str2 = str2.ToUpper();
+
+        str1 = RemoveSpaces(str1);
+        str2 = RemoveSpaces(str2);
+
+        //serve solamente un array
+        charArray = str1.ToCharArray();
+
+        if (str1.Length == str2.Length)
+        {
+            anagram = CheckAnagram(str2, charArray);
+        } else anagram = false;
+
+        if (anagram) Console.WriteLine("Le due stringhe sono anagrammi!");
+        else Console.WriteLine("Le due stringhe NON sono angrammi!");
+    }
+
+    public static string RemoveSpaces(string s)
+    {
+        string news = "";
+
+        foreach (char c in s)
+        {
+            if (((int)c >= 65 && (int)c <= 90) || ((int)c >= 97 && (int)c <= 122)) news += c;
+        }
+
+        return news;
+    }
+
+    public static bool CheckAnagram(string str, char[] a)
+    {
+
+        //il codice parla per sé
+        foreach (char c in str)
+        {
+            if (a.Contains(c))
+            {
+                a[Array.IndexOf(a, c)] = '1';
+            } else return false;
+        }
+        return true;
+    }
+}
+
+/*
+
+
+---------------------------------------------------------------ESERCIZIO 2----------------------------------------------------------------------
+
+
+*/
+
+using System;
+namespace EserciziCSharpJalba;
+
+class MainClass{
+
+    /*
+        Esercizio 2
+            Scrivere un programma che, lette da tastiera le temperature T di un mese,
+            determini la temperatura media, la temperatura minima e la temperatura massima
+    */
+
+    public static void Main(){
+        //variabili
+        float tMax = -100;
+        float tMin = 100;
+        float tMed = 0;
+        float T;
+        int mesi = 12;
+
+
+        //12 ripetizioni, una per ogni mese
+        //andando di volta in volta ad aggiornare le variabili
+        for (int i = 0; i < mesi; i++){
+            do {
+                T = CheckFloat($"Inserisci la temperatura del mese {i + 1}");
+            } while (T < -97.8 || T > 56.7);
+
+            if (T > tMax) tMax = T;
+            if (T < tMin) tMin = T;
+
+            tMed += T;
+        }
+
+        //calcolo media
+        tMed = tMed / mesi;
+
+        Console.WriteLine($"La temperatura media e' {tMed}");
+        Console.WriteLine($"La temperatura minima e' {tMin}");
+        Console.WriteLine($"La temperatura massima e' {tMax}");
+    }
+
+    public static float CheckFloat(string m){
+        float n;
+        do {
+            Console.WriteLine(m);
+        } while (!float.TryParse(Console.ReadLine(), out n));
+        return n;
+    }
+}
+
+/*
+
+
+---------------------------------------------------------------ESERCIZIO 3----------------------------------------------------------------------
+
+
+*/
+
+using System;
+namespace EserciziCSharpJalba;
+
+class MainClass{
+
+    /*
+        Esercizio 3
+            Input: 1 numero intero
+            Il programma verifica se è un numero perfetto o meno.
+            Un numero perfetto è un numero intero positivo che è uguale
+            alla somma dei suoi divisori (escluso se stesso).
+    */
+
+    public static void Main(){
+        //variabili
+        int num;
+        int somma = 0;
+        bool perfetto = false;
+
+        //input
+        num = CheckInt("Inserisci il numero: ");
+
+        //al momento non si sono scoperti numeri perfetti dispari e,
+        //anche se ci fossero, sarebbero comunque troppo grandi da immagazzinare
+        //in una variabile di tipo Int32
+        if (num % 2 == 0){
+            for (int i = 1; i <= num / 2 /* è sempre pari */; i++) {
+                if (num % i == 0) somma += i;
+            }
+            if (somma == num) perfetto = true;
+        }
+            
+        if (perfetto) Console.WriteLine($"Il numero {num} e' un numero perfetto!");
+        else Console.WriteLine($"Il numero {num} non e' un numero perfetto.");
+    }
+
+    public static int CheckInt(string m){
+        int n;
+        do {
+            Console.Write(m);
+        } while (!int.TryParse(Console.ReadLine(), out n));
+        return n;
+    }
+}
+
+/*
+
+
+---------------------------------------------------------------ESERCIZIO 4----------------------------------------------------------------------
+
+
+*/
+
+//a mano a mano si aggiornano le variabili
+//per crescente e decresente invece ci sono due bool
+//dato che può essercene uno alla volta alla seconda ripetizione uno diventerà false
+//e se non è di nessun tipo anche il secondo sarà false
+
+/*
+
+using System;
+namespace ArrayCSharp1;
+
+class MainClass
+{
+    /*
+     *
+     *  Esercizio 4
+     *      Si scriva un programma per analizzare una sequenza di numeri. Dati N numeri interi letti da tastiera
+            si vogliono calcolare e stampare su schermo diversi risultati:
+            - quanti sono i numeri positivi, nulli e negativi
+            - quanti sono i numeri pari e dispari
+            - se la sequenza dei numeri inseriti è crescente, decrescente oppure né crescente né decrescente.
+     * 
+     */
+    public static void Main()
+    {
+        //variabili
+        float[] nums;
+        int N = 0;
+        int i = 0;
+        int pos = 0;
+        int nul = 0;
+        int neg = 0;
+        int p = 0;
+        int d = 0;
+        bool cresc = true;
+        bool decresc = true;
+
+        //input lunghezza
+        while (N < 1)
+        {
+            Console.Write("Inserire la lunghezza dell'array: ");
+
+            try
+            {
+                N = Convert.ToInt32(Console.ReadLine());
+            }
+
+            catch(FormatException)
+            {
+                Console.WriteLine("Si prega di inserire un numero intero.");
+            }
+        }
+
+        //inizializzazione array
+        nums = new float[N];
+
+        while (i < N)
+        {
+            do
+            {
+                Console.Write($"Inserire numero in posizione {i}: ");
+            } while (!float.TryParse(Console.ReadLine(), out nums[i]));
+
+            if (nums[i] > 0) pos++;
+            else if (nums[i] < 0) neg++;
+            else nul++;
+
+            if (nums[i] % 2 == 0) p++;
+            else if (nums[i] % 1 == 0) d++;
+
+            try //quando la i è 0 i-1 sarà out of range
+            {
+                if (cresc && nums[i] > nums[i - 1]) cresc = false;
+                else if (decresc && nums[i] < nums[i - 1]) decresc = false;
+            }
+
+            catch (IndexOutOfRangeException)
+            {
+                //quindi la ignora
+            }
+
+            finally { i++; } //i deve comunque aumentare
+        }
+
+        //risultati
+        Console.WriteLine($"Numeri: pos {pos}, neg {neg}, null {nul}.");
+        Console.WriteLine($"Numeri: pari {p}, disp {d}.");
+        if (cresc) Console.WriteLine("La sequenza è crescente!");
+        else if (decresc) Console.WriteLine("La sequenza è decrescente!");
+        else Console.WriteLine("La sequenza non è né crescente né decrescente!!!");
+    }
+}
+
+
+---------------------------------------------------------------ESERCIZIO 5----------------------------------------------------------------------
+
+
+*/
+
+//un for e due variabili
+//una scorre tutto l'array e aggiunge la somma
+//all'altra viene assegnato il numero più grande
+//se la somma è uguale al doppio del numero più grande allora è vero
+
+/*
+
+using System;
+namespace ArrayCSharp1;
+
+class MainClass
+{
+    /*
+     *
+     *  Esercizio 5
+     *      Implementare la lettura di un array di interi di 10 posizioni e verificare se c'è una cella il cui
+            contenuto è uguale alla somma del contenuto di tutte le altre celle
+     * 
+     */
+    public static void Main()
+    {
+        //variabili
+        int[] nums;
+        int N = 10;
+        int s = 0;
+        int M = Int32.MinValue;
+
+        //inizializzazione array
+        nums = new int[N];
+
+        for (int i = 0; i < N; i++)
+        {
+            do
+            {
+                Console.Write($"Inserire un numero in posizione {i}: ");
+            } while (!int.TryParse(Console.ReadLine(), out nums[i]));
+
+            s += nums[i];
+
+                if (nums[i] > M) M = nums[i];
+        }
+
+        if (s == 2 * M) Console.WriteLine($"Il numero in indice {Array.IndexOf(nums, M)} è uguale alla somma dei contenuti di tutte le altre celle!");
+        else Console.WriteLine("Non esiste tale numero che sia uguale alla somma dei contenuti di tutte le altre celle :(");
+    }
+}
+
+
+---------------------------------------------------------------ESERCIZIO 6----------------------------------------------------------------------
+
+
+*/
+
+//un do iniziale che ignora la posizione prima (try catch >:))
+//un while che prende posizione prima e dopo
+//un do finale che ignora la posizione dopo (di nuovo try catch >:)))))
+
+using System;
+using System.ComponentModel.Design;
+namespace ArrayCSharp1;
+
+class MainClass
+{
+    /*
+     *
+     *  Esercizio 6
+     *      Trovare tutti i picchi in un array di interi. Un picco è definito come un elemento dell'array che è
+            strettamente maggiore dei suoi due vicini immediati.
+            Output richiesto: lista degli eventuali picchi
+     * 
+     */
+    public static void Main()
+    {
+        //variabili
+        int[] nums;
+        int[] picchi;
+        int N = 10;
+        int i = 0;
+        int j = 0;
+
+        //inizializzazione array
+        nums = new int[N];
+        picchi = new int[N/2];
+
+        //volevo tenere tutto in un unico ciclo
+        while (i <= N)
+        {
+            //parte input
+            if (i < N)
+            {
+                do
+                {
+                    Console.Write($"Inserire un numero in posizione {i}: ");
+                } while (!int.TryParse(Console.ReadLine(), out nums[i]));
+            }
+
+            //parte controllo
+            if (i >= 1)
+            {
+                try
+                {
+                    if (nums[i - 1] > nums[i - 2] && nums[i - 1] > nums[i]) { picchi[j] = nums[i - 1]; j++; }
+                }
+
+                catch (IndexOutOfRangeException)
+                {
+                    Console.WriteLine($"baba {i}");
+                    if (i == 1)
+                    {
+                        if (nums[i - 1] > nums[i]) { picchi[j] = nums[i - 1]; j++; } //controllo prima cella
+                    }
+                    else if (nums[i - 1] > nums[i - 2]) picchi[j] = nums[i - 1]; //a questo else si arriverà solamente alla fine del ciclo aka controllo ultima cella
+                }
+            }
+
+            i++;
+        }
+
+        //stampa risultati
+
+        Console.WriteLine("Array originale: ");
+        for (int k = 0; k < N; k++)
+        {
+            Console.Write($"{nums[k]} ");
+        }
+
+        Console.WriteLine();
+
+        if (j != 0)
+        {
+            Console.WriteLine("Picchi: ");
+            for (int k = 0; k < j + 1; k++)
+            {
+                Console.Write($"{picchi[k]} ");
+            }
+        } else Console.WriteLine("Nessun picco rilevato!");
+        
+    }
+}
