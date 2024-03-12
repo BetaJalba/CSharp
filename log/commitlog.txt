@@ -10,4 +10,14 @@ Date:   Tue Mar 12 22:06:22 2024 +0100
 
     Esercizi CSharp Laboratorio per 13/03/2024
 
+commit 32239eb43826e5c6b4f1b809a65ab4a68619ad6e (origin/main, origin/HEAD)
+Author: BetaJalba <cristianjalba4@gmail.com>
+Date:   Tue Mar 12 22:10:48 2024 +0100
 
+    Aggiunto text file per i log
+
+commit c63578b8f50a6a39b48e8a0d1c8532a1aa7c3982 (HEAD -> main)
+Author: BetaJalba <cristianjalba4@gmail.com>
+Date:   Tue Mar 12 23:13:26 2024 +0100
+
+    Esercizi Taffurelli 13 Marzo 2024
