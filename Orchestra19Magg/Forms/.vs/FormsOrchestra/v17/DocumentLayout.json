@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|C:\\Users\\crist\\source\\repos\\FormsOrchestra\\formsorchestra\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|C:\\Users\\crist\\source\\repos\\FormsOrchestra\\formsorchestra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|C:\\Users\\crist\\source\\repos\\FormsOrchestra\\formsorchestra\\corchestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\corchestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|C:\\Users\\crist\\source\\repos\\FormsOrchestra\\formsorchestra\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|c:\\users\\crist\\source\\repos\\formsorchestra\\formsorchestra\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|C:\\Users\\crist\\source\\repos\\FormsOrchestra\\formsorchestra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|C:\\Users\\crist\\source\\repos\\FormsOrchestra\\formsorchestra\\cstrumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7A9D11-EDC5-44AD-B859-970CA274E99C}|FormsOrchestra\\FormsOrchestra.csproj|solutionrelative:formsorchestra\\cstrumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form2.Designer.cs",
+              "RelativeToolTip": "FormsOrchestra\\Form2.Designer.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAkwGIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:45:18.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form2.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\Form2.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form2.cs",
+              "RelativeToolTip": "FormsOrchestra\\Form2.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAQwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:40:30.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form1.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\Form1.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form1.cs [Progettazione]",
+              "RelativeToolTip": "FormsOrchestra\\Form1.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:21:51.367Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "COrchestra.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\COrchestra.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\COrchestra.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\COrchestra.cs",
+              "RelativeToolTip": "FormsOrchestra\\COrchestra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:16:04.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form1.Designer.cs",
+              "RelativeToolTip": "FormsOrchestra\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:12:32.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CStrumento.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\CStrumento.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\CStrumento.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\CStrumento.cs",
+              "RelativeToolTip": "FormsOrchestra\\CStrumento.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAcwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:16:05.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form1.cs",
+              "RelativeDocumentMoniker": "FormsOrchestra\\Form1.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\FormsOrchestra\\FormsOrchestra\\Form1.cs",
+              "RelativeToolTip": "FormsOrchestra\\Form1.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAmwFQAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:16:07.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
