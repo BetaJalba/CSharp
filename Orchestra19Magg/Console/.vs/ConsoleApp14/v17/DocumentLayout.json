@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E78A976-BAC8-45FB-88E5-9C1EDD300EF6}|ConsoleApp14\\ConsoleApp14.csproj|c:\\users\\crist\\source\\repos\\consoleapp14\\consoleapp14\\corchestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E78A976-BAC8-45FB-88E5-9C1EDD300EF6}|ConsoleApp14\\ConsoleApp14.csproj|solutionrelative:consoleapp14\\corchestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E78A976-BAC8-45FB-88E5-9C1EDD300EF6}|ConsoleApp14\\ConsoleApp14.csproj|c:\\users\\crist\\source\\repos\\consoleapp14\\consoleapp14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E78A976-BAC8-45FB-88E5-9C1EDD300EF6}|ConsoleApp14\\ConsoleApp14.csproj|solutionrelative:consoleapp14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E78A976-BAC8-45FB-88E5-9C1EDD300EF6}|ConsoleApp14\\ConsoleApp14.csproj|c:\\users\\crist\\source\\repos\\consoleapp14\\consoleapp14\\cstrumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E78A976-BAC8-45FB-88E5-9C1EDD300EF6}|ConsoleApp14\\ConsoleApp14.csproj|solutionrelative:consoleapp14\\cstrumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CStrumento.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\ConsoleApp14\\CStrumento.cs",
+              "RelativeDocumentMoniker": "ConsoleApp14\\CStrumento.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\ConsoleApp14\\CStrumento.cs",
+              "RelativeToolTip": "ConsoleApp14\\CStrumento.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAADwvyUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:25:47.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "COrchestra.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\ConsoleApp14\\COrchestra.cs",
+              "RelativeDocumentMoniker": "ConsoleApp14\\COrchestra.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\ConsoleApp14\\COrchestra.cs",
+              "RelativeToolTip": "ConsoleApp14\\COrchestra.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAqwFoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:25:42.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\ConsoleApp14\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp14\\Program.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\ConsoleApp14\\ConsoleApp14\\Program.cs",
+              "RelativeToolTip": "ConsoleApp14\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:25:07.846Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
