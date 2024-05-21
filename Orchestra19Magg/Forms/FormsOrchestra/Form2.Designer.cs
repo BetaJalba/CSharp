@@ -113,6 +113,7 @@
             txtYear.Name = "txtYear";
             txtYear.Size = new Size(100, 23);
             txtYear.TabIndex = 6;
+            txtYear.MaxLength = 4;
             txtYear.KeyPress += txtYear_KeyPress;
             // 
             // bntConf

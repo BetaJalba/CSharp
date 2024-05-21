@@ -1,4 +1,6 @@
 
+using Newtonsoft.Json;
+
 namespace FormsOrchestra
 {
     public partial class Form1 : Form
@@ -8,8 +10,10 @@ namespace FormsOrchestra
             InitializeComponent();
         }
 
-        private System.Threading.Timer autoSave = new System.Threading.Timer(eseguiFunzione => update()); //salva sul JSON in automatico
+        private System.Threading.Timer autoSave; //salva sul JSON in automatico
         COrchestra orchestra; //orchestra non inizializzata
+        DirectoryInfo dirinf;
+        string pathname;
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -49,19 +53,49 @@ namespace FormsOrchestra
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pathname = Directory.GetCurrentDirectory();
+            dirinf = new DirectoryInfo(pathname);
+
+            pathname = dirinf.Parent.Parent.FullName + @"\Pippo.json";
+
+            autoSave = new System.Threading.Timer(eseguiFunzione => update());
             autoSave.Change(0, (20 * 1000) /* ogni 20 secondi */);
+
+            if (File.Exists(pathname))
+            {
+                using (StreamReader sr = new StreamReader(pathname))
+                {
+                    if (sr.Peek() != -1) //se il file contiene qualcosa
+                    {
+                        orchestra = Newtonsoft.Json.JsonConvert.DeserializeObject<COrchestra>(File.ReadAllText(pathname).ToString());
+                        updateListBox(); //aggiorna la list box
+                        panel2.Visible = false;
+                        panel1.Visible = true;
+                    }
+                }
+            }
         }
 
-        private static void update()
+        private void update()
         {
+            if (orchestra != null)
+            {
+                string jsonStrumenti = JsonConvert.SerializeObject(orchestra, Newtonsoft.Json.Formatting.Indented);
+                if (!File.Exists(pathname))
+                {
+                    File.Create(pathname).Close(); //crea il file
+                }
+                File.WriteAllText(pathname, jsonStrumenti); //ci scrive il json
 
+                MessageBox.Show("File salvato successamente!!1!");
+            }
         }
 
         private void btnDel_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex != -1)
             {
-                orchestra.EliminaStrumento(orchestra.strumenti[listBox1.SelectedIndex].Nome);
+                orchestra.EliminaStrumento(orchestra.strumenti[listBox1.SelectedIndex].nome.ToLower());
                 updateListBox();
                 //passa all'elimina strumento il nome dell'oggetto nell'index scelto della
                 //listbox (in quanto per la funzione updateListBox() sono resi paralleli 
@@ -82,7 +116,7 @@ namespace FormsOrchestra
         {
             if (listBox1.SelectedIndex != -1)
             {
-                MessageBox.Show(orchestra.Costo(orchestra.strumenti[listBox1.SelectedIndex].Tipologia));
+                MessageBox.Show(orchestra.Costo(orchestra.strumenti[listBox1.SelectedIndex].tipologia.ToLower()));
                 updateListBox();
             }
             else

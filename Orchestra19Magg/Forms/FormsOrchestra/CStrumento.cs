@@ -8,11 +8,13 @@ namespace FormsOrchestra
 {
     public class CStrumento
     {
-        string nome;
-        string tipologia;
+        public string nome { get; }
+        public string tipologia { get; }
         public float costo { get; }
-        int annoFabbricazione { get; }
+        public int annoFabbricazione { get; }
 
+        /*
+         * 
         public string Nome
         {
             get
@@ -24,6 +26,8 @@ namespace FormsOrchestra
             get
             { return tipologia.ToLower(); } //tipologia = Tipologia = TIPOLOGIA
         }
+
+        */
 
         public CStrumento(string nome, string tipologia, float costo, int annoFabbricazione)
         {

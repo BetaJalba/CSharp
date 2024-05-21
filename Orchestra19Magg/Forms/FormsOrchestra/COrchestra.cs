@@ -9,7 +9,7 @@ namespace FormsOrchestra
     public class COrchestra
     {
         public List<CStrumento> strumenti { get; private set; }
-        DateTime lastConc;
+        public DateTime lastConc { get; }
 
         public COrchestra(DateTime lastConc)
         {
@@ -52,7 +52,7 @@ namespace FormsOrchestra
 
             foreach (var strumento in strumenti)
             {
-                if (strumento.Tipologia == tipologia)
+                if (strumento.tipologia.ToLower() == tipologia)
                 {
                     r += strumento.costo;
                     count++;
@@ -77,7 +77,7 @@ namespace FormsOrchestra
 
             foreach (var strumento in strumenti)
             {
-                if (strumento.Nome == nome.ToLower())
+                if (strumento.nome.ToLower() == nome.ToLower())
                 {
                     strumenti.Remove(strumento);
                     return;
@@ -95,7 +95,7 @@ namespace FormsOrchestra
 
                 for (int i = 1; i < strumenti.Count; i++)
                 {
-                    if (strumenti[i].Nome.CompareTo(strumenti[i - 1].Nome) < 0)
+                    if (strumenti[i].nome.ToLower().CompareTo(strumenti[i - 1].nome.ToLower()) < 0)
                     {
                         Swap(i, i - 1);
                         ordinato = false;
