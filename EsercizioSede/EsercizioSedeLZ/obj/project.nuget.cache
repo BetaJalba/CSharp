@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FKksENjNdnSgXGd/C1PrdyIMdsQFnLN31liX0jyWha0QaCwExdJtZNuKv+oy4l2aViBGISK2Pg5fud4Du7yx1A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\crist\\OneDrive\\Desktop\\EsercizioSede\\EsercizioSedeLZ\\EsercizioSedeLZ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crist\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

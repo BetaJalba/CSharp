@@ -1,0 +1,41 @@
+[
+  {
+    "Responsabile": "Alberto Frizzo",
+    "Indirizzo": "Viale dell'Industria",
+    "Citta": "Vicenza",
+    "Regione": "Veneto",
+    "_parcoAuto": [
+      {
+        "Consumo": 14.0,
+        "Serbatoio": 41.64,
+        "SerbatoioMax": 60.0,
+        "Targa": "JR462ZF",
+        "Chilometraggio": 117.0
+      },
+      {
+        "Consumo": 13.0,
+        "Serbatoio": 45.0,
+        "SerbatoioMax": 55.0,
+        "Targa": "XC436LF",
+        "Chilometraggio": 0.0
+      }
+    ],
+    "SedeId": "0000"
+  },
+  {
+    "Responsabile": "Giovanni Barga",
+    "Indirizzo": "Via dei Fabbri",
+    "Citta": "Vicenza",
+    "Regione": "Veneto",
+    "_parcoAuto": [
+      {
+        "Consumo": 26.0,
+        "Serbatoio": 8.93,
+        "SerbatoioMax": 9.0,
+        "Targa": "KR562RE",
+        "Chilometraggio": 106.0
+      }
+    ],
+    "SedeId": "0001"
+  }
+]
